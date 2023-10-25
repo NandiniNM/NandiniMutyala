@@ -2,8 +2,8 @@
 title: "About"
 ---
 
-### About this site
+This site is hosted using Github. The source code can be found in the public repository: NandiniMutyala.github.io, which can be accessed by clicking the github logo at the top of the page. I hope you were able to learn a little bit about me and thanks for stopping by!
 
-Sometimes you need to say a bit about the site -- how it was made, where it's hosted, where the source code can be found. 
+![](https://media.giphy.com/media/H99mmJ95ApToQlij8H/giphy.gif)
 
-If this is for a project or analysis, I recommend giving some details about the R package versions that you used to create the content. 
+:)
