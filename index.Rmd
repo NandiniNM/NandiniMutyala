@@ -64,4 +64,4 @@ output:
 
 This is just a brief summary of my education and experiences. If you would like to learn more, you can visit my LinkedIn page by using the link below.
 
-[LinkedIn](www.linkedin.com/in/nandini-mutyala)
+[LinkedIn](https://www.linkedin.com/in/nandini-mutyala/)
