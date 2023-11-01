@@ -11,3 +11,7 @@ This site is hosted using Github. I created this as a part of my assignment for 
 ![](https://media.giphy.com/media/H99mmJ95ApToQlij8H/giphy.gif)
 
 :)
+
+If you made it this far and looked at all my pages, then here's a cute picture of my dog from Halloween.
+
+<img src="images/IMG_3282.jpg" style="width:50%">

@@ -8,16 +8,76 @@ output:
 
 ### Problem 2:
 
-Create a flexdashboard using plotly for that includes at least three distinct plot types (e.g. scatterplots, line plots, bar plots, box plots, etc.). Use one of the following datasets, and load from the p8105.datasets package:
+We are going to look at the NYC Restaurant Inspection dataset and create a flexdashboard to visualize the data.
 
-Instacart
-NY NOAA
-NYC Restaurant Inspections
-These datasets are large; you may want / need to filter or randomly sample from the complete dataset to ensure a reasonable product
+Loading libraries and dataset:
 
-Run code below for website:
-git add --all
+```{r}
+library(p8105.datasets)
+library(tidyverse)
+library(plotly)
+library(dplyr)
 
-git commit -m "adding site_libs"
+data("rest_inspec")
 
-git push
+inspect = 
+  rest_inspec |> 
+  mutate(
+    inspection_date = lubridate::ymd(inspection_date),
+    year = year(inspection_date),
+    month = month(inspection_date)) |> 
+  select(boro, cuisine_description, inspection_date, action, critical_flag, score, grade, inspection_type, year, 
+         month) |> 
+  filter(cuisine_description %in% c("Thai","Spanish","Russian","Polynesian","Seafood","Pizza/Italian",
+                                    "Peruvian","Pakistani","Latin","Moroccan",
+                                    "Japanese","German","Chinese","French","Creole")) |> 
+  drop_na() |> 
+  sample_n(10000)
+```
+
+### Lineplot
+
+Average restaurant score from 2013-2017 by borough in NY
+
+```{r}
+inspect |> 
+  group_by(boro,year) |> 
+  summarise(mean_score = mean(score)) |> 
+  plot_ly(x = ~year, y = ~mean_score, color = ~boro, type = "scatter", mode = "lines", 
+          colors = "viridis") |> 
+  layout(title = "Lineplot of Yearly Average Restaurant Scores by Borough" , plot_bgcolor = "e5ecf6", 
+         xaxis = list(autotypenumbers = 'strict', title = 'Year'), 
+         yaxis = list(title = 'Average Restaurant Score'))
+```
+
+
+### Boxplot
+
+Restaurant score by cuisine type in NY
+
+```{r}
+inspect |>
+  mutate(cuisine_description = fct_reorder(cuisine_description, score)) |> 
+  plot_ly(x = ~cuisine_description, y = ~score, color = ~cuisine_description, 
+          type = "box", colors = "viridis") |> 
+  layout(title = "Boxplots of Restaurant Scores by Type of Cuisine" , plot_bgcolor = "e5ecf6", 
+         xaxis = list(title = 'Type of Cuisine'), 
+         yaxis = list(title = 'Restaurant Score'))
+```
+
+
+### Barchart
+
+Critical Violations (likely to contribute to food-borne illness) by borough in NY
+
+```{r}
+inspect |> 
+  filter(boro != "Missing") |> 
+  count(boro, critical_flag) |> 
+  plot_ly(x = ~boro, y = ~n, type = "bar", color = ~critical_flag)|> 
+  layout(title = "Barchart of Violation Type across the Boroughs" , plot_bgcolor = "e5ecf6", 
+         xaxis = list(title = 'Borough'), 
+         yaxis = list(title = 'Frequency'))
+```
+
+
