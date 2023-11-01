@@ -5,12 +5,16 @@ navbar:
   right:
     - text: "About"
       href: about.html
-    - text: "Nandini Mutyala"
+    - text: "Resume"
       href: index.html
+    - text: "Projects"
+      href: project.html
+    - text: "Flexdashboard"
+      href: flexdashboard.html
     - icon: fa-envelope fa-lg
       href: mailto:<you@youremail.com>
     - icon: fa-github fa-lg
       href: http://github.com/<YOUR_GH_NAME>/
-  theme: lumen
+  theme: sandstone
 output:
-  html_document
+  html_document:

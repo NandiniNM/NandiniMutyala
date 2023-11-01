@@ -1,0 +1,30 @@
+---
+title: "Projects"
+output:
+  html_document:
+      toc: true
+      toc_float: true
+--- 
+
+I like working with my hands for different crafts and DIYS as well as learning new skills. Here are some of the projects that I've worked on over the years and have posted on social media.
+
+
+### Mural in EMS Bay
+<img src="images/IMG_4988.PNG" style="width:50%">
+
+### Lion Painting
+<img src="images/IMG_6102.JPG" style="width:50%">
+
+### Bedroom Mural
+
+
+### Rollerskates
+
+
+### Sunset Painting
+
+
+### Sweatshirt Embroidery
+
+
+### Wave of Kanagawa

@@ -11,7 +11,7 @@
 
 
 
-<title>Nandini Mutyala</title>
+<title>Resume</title>
 
 <script src="site_libs/header-attrs-2.24/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
@@ -29,6 +29,9 @@
        h6 {font-size: 12px;}
        code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
        pre:not([class]) { background-color: white }</style>
+<script src="site_libs/jqueryui-1.13.2/jquery-ui.min.js"></script>
+<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
@@ -221,6 +224,69 @@ $(document).ready(function () {
 
 
 
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+@media print {
+.toc-content {
+  /* see https://github.com/w3c/csswg-drafts/issues/4434 */
+  float: right;
+}
+}
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+
+</style>
+
+
 
 </head>
 
@@ -228,6 +294,16 @@ $(document).ready(function () {
 
 
 <div class="container-fluid main-container">
+
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
 
 
 
@@ -251,7 +327,13 @@ $(document).ready(function () {
   <a href="about.html">About</a>
 </li>
 <li>
-  <a href="index.html">Nandini Mutyala</a>
+  <a href="index.html">Resume</a>
+</li>
+<li>
+  <a href="project.html">Projects</a>
+</li>
+<li>
+  <a href="flexdashboard.html">Flexdashboard</a>
 </li>
 <li>
   <a href="mailto:&lt;you@youremail.com&gt;">
@@ -274,17 +356,180 @@ $(document).ready(function () {
 
 
 
-<h1 class="title toc-ignore">Nandini Mutyala</h1>
+<h1 class="title toc-ignore">Resume</h1>
 
 </div>
 
 
-<div id="education-experiences" class="section level3">
-<h3>Education &amp; Experiences:</h3>
+<div id="academic-background" class="section level2">
+<h2>Academic Background</h2>
+<div id="columbia-university-mailman-school-of-public-health"
+class="section level3">
+<h3>Columbia University Mailman School of Public Health</h3>
+<div id="master-of-public-health-may-2024" class="section level5">
+<h5>Master of Public Health, May 2024</h5>
+<ul>
+<li>Department of Epidemiology, Certificate in Infectious Disease
+Epidemiology</li>
+</ul>
+</div>
+</div>
+<div id="the-college-of-new-jersey" class="section level3">
+<h3>The College of New Jersey</h3>
+<div id="bachelor-of-science-may-2022" class="section level5">
+<h5>Bachelor of Science, May 2022</h5>
+<ul>
+<li>Double-major in Public Health (Social and Behavioral Health
+Concentration) and Mathematics (Statistics Concentration) and minor in
+Criminology</li>
+<li>Societies: Honor’s Program, Phi Beta Kappa, Eta Sigma Gamma</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="research-experience" class="section level2">
+<h2>Research Experience</h2>
+<div id="analysis-of-error-prevalence-in-quality-assurance-reviews"
+class="section level5">
+<h5>Analysis of Error Prevalence in Quality Assurance Reviews</h5>
+<ul>
+<li>Conducted monthly QA reviews for all Bexsero charts of newly
+enrolled PTPs and reviewed HPTN 091 charts prior to Interim Monitoring
+Review by DAID and entered information about chart errors into
+RedCap</li>
+<li>Exported data from RedCap and using SAS, utilized data visualization
+methods and statistical tests (Cochran’s Q &amp; McNemar’s) to evaluate
+prevalence of error types across different studies</li>
+<li>Interpreted data analysis, presented to the HPC staff, and provided
+recommendations to minimize errors during data collection and better
+prepare the site before monitoring visits</li>
+</ul>
+</div>
+<div
+id="is-personal-protective-equipment-worth-the-hassle-annual-risk-of-cryptosporidiosis-to-dairy-farmers-and-how-personal-protective-equipment-and-handwashing-can-mitigate-it"
+class="section level5">
+<h5>Is Personal Protective Equipment Worth the Hassle? Annual Risk of
+Cryptosporidiosis to Dairy Farmers and How Personal Protective Equipment
+and Handwashing Can Mitigate It</h5>
+<ul>
+<li>Advisor: Assistant Professor Dr. Alexis Mraz, PhD, MS</li>
+<li>Determined the occupational risk of cryptosporidiosis among NJ dairy
+farmers by developing a Quantitative Microbial Risk Assessment (QMRA) in
+R through the utilization of prior literature and analysis of cow feces
+samples</li>
+<li>Conducted work as a Student Assistant Researcher in the lab by
+collecting samples of cow feces; processing control and C. parvum spiked
+samples using filtration methods established in study protocols; and
+preparing samples for DNA analysis by the NanoDrop and qPCR machines
+under the supervision of the PI</li>
+</ul>
+</div>
+<div id="statistical-analysis-of-simulated-snakeskins"
+class="section level5">
+<h5>Statistical Analysis of Simulated Snakeskins</h5>
+<ul>
+<li>Advisor: Professor Dr. Ochs PhD</li>
+<li>Analyzed data generated by researchers at Haverford College and
+employed R programming to perform cluster analysis and dimensional
+reduction to determine the underlying parameters inherent in animal skin
+patterns</li>
+</ul>
+</div>
+<div
+id="the-public-health-applications-of-twitter-during-the-current-covid-19-pandemic"
+class="section level5">
+<h5>The Public Health Applications of Twitter During the Current
+COVID-19 Pandemic</h5>
+<ul>
+<li>Advisor: Assistant Professor Dr. Natasha Patterson PhD, MPH</li>
+<li>Analyzed prior research on public health applications of social
+media and health education models for previous pandemics</li>
+<li>Gathered Twitter posts throughout the COVID-19 outbreak; developed
+and trained topic classification and sentiment analysis models using
+online software, and ran data analytics on the sampled tweets</li>
+<li>Developed further recommendations for model enhancement and data
+analytics to determine effectiveness of public health education theory
+applications and interventions during disease outbreaks similar to
+COVID-19</li>
+</ul>
+</div>
+</div>
+<div id="professional-experience" class="section level2">
+<h2>Professional Experience</h2>
+<div
+id="casual-research-assistant-columbia-mailman-school-of-public-health-aug-2023---present"
+class="section level5">
+<h5><em>Casual Research Assistant</em>, <strong>Columbia Mailman School
+of Public Health</strong>, Aug 2023 - Present</h5>
+<ul>
+<li>Conduct data acquisition, processing/cleaning, linkages, and utilize
+R programming to perform analysis to fulfill research aims</li>
+<li>Conduct literature reviews; contribute (as a co-author) to
+manuscripts, figures, tables, slides, and other presentation materials
+based on study findings</li>
+<li>Develop and update IRB protocols as well as contribute to new and
+ongoing grant proposals as needed</li>
+</ul>
+</div>
+<div
+id="data-management-intern-interim-study-coordinator-harlem-prevention-center-may-2023---aug-2023"
+class="section level5">
+<h5><em>Data Management Intern &amp; Interim Study Coordinator</em>,
+<strong>Harlem Prevention Center</strong>, May 2023 - Aug 2023</h5>
+<ul>
+<li>Conducted data monitoring, quality assurance, and quality control on
+data collected for multiple ongoing studies in preparation for future
+study reviews and site visits</li>
+<li>Coordinated participants and conducted enrollment/exit interviews as
+per data collection protocols of the COVID-19 Self-testing study</li>
+<li>Reviewed eligibility criteria of screened study participants for
+enrollment, including review of eligibility case report forms, source
+documents, and informed consent forms</li>
+<li>Assisted with the review of all data queries and their resolution as
+well as submission of study forms to the statistical and data management
+center</li>
+<li>Identified issues with data collection, reported findings to the
+project’s leadership, and developed appropriate corrective measures with
+input from the team to improve site performance and minimize errors</li>
+<li>Attended weekly staff meetings to discuss the progress of the
+studies involved and research-related issues</li>
+<li>Conducted all research activities in accordance with study protocol,
+standard operating procedures, and other appropriate institutional
+regulations, procedures, and policies, including procedures to safeguard
+the confidentiality of study participants</li>
+</ul>
+</div>
+<div
+id="hunger-prevention-program-assistant-arm-in-arm-may-2021---sep-2021"
+class="section level5">
+<h5><em>Hunger Prevention Program Assistant</em>, <strong>Arm in
+Arm</strong>, May 2021 - Sep 2021</h5>
+<ul>
+<li>Conducted surveys with clients at the Hudson location regarding
+visits prior to and during the COVID-19 pandemic</li>
+<li>Analyzed client intake data for the Hudson location and reported the
+results to the Food Pantry Team</li>
+<li>Reviewed social media analytics and provided recommendations to
+promote the organization’s presence across social media platforms</li>
+<li>Assisted clients in Trenton and Princeton areas struggling with food
+insecurity by providing groceries on-site and through home food
+deliveries</li>
+<li>Collaborated with Capital Health to provide blood pressure
+screenings and COVID-19 vaccines at a health screening event and
+provided educational brochures focused on preventative care for
+cardiovascular health</li>
+</ul>
+<p>This is just a brief summary of my education and experiences. If you
+would like to learn more, you can visit my LinkedIn page by using the
+link below.</p>
+<p><a href="www.linkedin.com/in/nandini-mutyala">LinkedIn</a></p>
+</div>
 </div>
 
 
 
+</div>
+</div>
 
 </div>
 
@@ -317,6 +562,35 @@ $(document).ready(function () {
 
 <!-- code folding -->
 
+<script>
+$(document).ready(function ()  {
+
+    // temporarily add toc-ignore selector to headers for the consistency with Pandoc
+    $('.unlisted.unnumbered').addClass('toc-ignore')
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2,h3",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_');
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
 
 <!-- dynamically load mathjax for compatibility with self-contained -->
 <script>

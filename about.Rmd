@@ -1,8 +1,12 @@
 ---
 title: "About"
----
+output:
+  html_document:
+      toc: true
+      toc_float: true
+--- 
 
-This site is hosted using Github. The source code can be found in the public repository: NandiniMutyala.github.io, which can be accessed by clicking the github logo at the top of the page. I hope you were able to learn a little bit about me and thanks for stopping by!
+This site is hosted using Github. I created this as a part of my assignment for my P8105: Data Science assignment course. The source code can be found in the public repository: NandiniMutyala.github.io, which can be accessed by clicking the github logo at the top of the page. I hope you were able to learn a little bit about me and thanks for stopping by!
 
 ![](https://media.giphy.com/media/H99mmJ95ApToQlij8H/giphy.gif)
 
