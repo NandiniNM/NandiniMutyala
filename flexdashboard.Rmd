@@ -1,18 +1,14 @@
 ---
-title: "Flexdashboard"
+title: "Flex Dashboard"
 output:
-  html_document:
-      toc: true
-      toc_float: true
+  flexdashboard::flex_dashboard:
+    orientation: columns
+    vertical_layout: fill
+    source: embed
 --- 
 
-### Problem 2:
-
-We are going to look at the NYC Restaurant Inspection dataset and create a flexdashboard to visualize the data.
-
-Loading libraries and dataset:
-
 ```{r}
+library(flexdashboard)
 library(p8105.datasets)
 library(tidyverse)
 library(plotly)
@@ -35,22 +31,9 @@ inspect =
   sample_n(10000)
 ```
 
-### Lineplot
 
-Average restaurant score from 2013-2017 by borough in NY
-
-```{r}
-inspect |> 
-  group_by(boro,year) |> 
-  summarise(mean_score = mean(score)) |> 
-  plot_ly(x = ~year, y = ~mean_score, color = ~boro, type = "scatter", mode = "lines", 
-          colors = "viridis") |> 
-  layout(title = "Lineplot of Yearly Average Restaurant Scores by Borough" , plot_bgcolor = "e5ecf6", 
-         xaxis = list(autotypenumbers = 'strict', title = 'Year'), 
-         yaxis = list(title = 'Average Restaurant Score'))
-```
-
-
+Column {data-width=650}
+-----------------------------------------------------------------------
 ### Boxplot
 
 Restaurant score by cuisine type in NY
@@ -65,6 +48,23 @@ inspect |>
          yaxis = list(title = 'Restaurant Score'))
 ```
 
+
+Column {data-width=350}
+-----------------------------------------------------------------------
+### Lineplot
+
+Average restaurant score from 2013-2017 by borough in NY
+
+```{r} 
+inspect |> 
+  group_by(boro,year) |> 
+  summarise(mean_score = mean(score)) |> 
+  plot_ly(x = ~year, y = ~mean_score, color = ~boro, type = "scatter", mode = "lines", 
+          colors = "viridis") |> 
+  layout(title = "Lineplot of Yearly Average Restaurant Scores by Borough" , plot_bgcolor = "e5ecf6", 
+         xaxis = list(autotypenumbers = 'strict', title = 'Year'), 
+         yaxis = list(title = 'Average Restaurant Score'))
+```
 
 ### Barchart
 

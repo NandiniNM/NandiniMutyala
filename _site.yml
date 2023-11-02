@@ -9,7 +9,7 @@ navbar:
       href: index.html
     - text: "Projects"
       href: project.html
-    - text: "Flexdashboard"
+    - text: "Flex Dashboard"
       href: flexdashboard.html
     - icon: fa-envelope fa-lg
       href: mailto:<you@youremail.com>
